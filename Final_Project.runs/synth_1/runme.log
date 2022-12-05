@@ -1,0 +1,377 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: synth_design -top system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21636
+WARNING: [Synth 8-2611] redeclaration of ansi port sending_data is not allowed [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:37]
+WARNING: [Synth 8-2611] redeclaration of ansi port received_data is not allowed [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/system.v:22]
+INFO: [Synth 8-6157] synthesizing module 'singlePulser' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/singlePulser.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'singlePulser' (1#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/singlePulser.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:22]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/baudrate_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (2#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/baudrate_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart_rx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart_rx.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart_rx.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart_tx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart_tx.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart_tx.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ascii2binary' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/ascii2binaryconverter.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/ascii2binaryconverter.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/ascii2binaryconverter.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'ascii2binary' (5#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/ascii2binaryconverter.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'opcode' does not match port width (3) of module 'ascii2binary' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:49]
+INFO: [Synth 8-6157] synthesizing module 'binary2ascii' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/binary2ascii.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/binary2ascii.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/binary2ascii.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'binary2ascii' (6#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/binary2ascii.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (7#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:22]
+WARNING: [Synth 8-689] width (3) of port connection 'opcode' does not match port width (1) of module 'uart' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/system.v:35]
+INFO: [Synth 8-6157] synthesizing module 'qadd' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/src/qadd.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'qadd' (8#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/src/qadd.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'system' (9#1) [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/new/system.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1247.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1247.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1247.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1247.289 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/constrs_1/imports/HWSYNLAB2021/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/constrs_1/imports/HWSYNLAB2021/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/constrs_1/imports/HWSYNLAB2021/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1265.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1265.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   43 Bit       Adders := 2     
+	   2 Input   43 Bit       Adders := 1     
+	   3 Input   42 Bit       Adders := 2     
+	   2 Input   42 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	              104 Bit    Registers := 1     
+	               43 Bit    Registers := 3     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	               4x37  Multipliers := 1     
+	               4x34  Multipliers := 1     
+	               4x30  Multipliers := 1     
++---Muxes : 
+	  16 Input   43 Bit        Muxes := 3     
+	   2 Input   43 Bit        Muxes := 9     
+	  14 Input   43 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   2 Input    3 Bit        Muxes := 4     
+	  16 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	  10 Input    1 Bit        Muxes := 2     
+	  16 Input    1 Bit        Muxes := 3     
+	  14 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP tmp1, operation Mode is: (A:0xe800)*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP tmp1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP tmp1, operation Mode is: (A:0x1e400)*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP tmp1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP tmp1, operation Mode is: (A:0xca00)*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP tmp1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP tmp1, operation Mode is: (A:0xf5e100)*B.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: operator tmp1 is absorbed into DSP tmp1.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[7]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[6]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[0]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[4] with 1st driver pin 'uart/idx_reg[4]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[4] with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net idx[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[3] with 1st driver pin 'uart/idx_reg[3]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[3] with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net idx[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[2] with 1st driver pin 'uart/idx_reg[2]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[2] with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net idx[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[1] with 1st driver pin 'uart/idx_reg[1]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[1] with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net idx[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[0] with 1st driver pin 'uart/idx_reg[0]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin idx[0] with 2nd driver pin 'GND' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net idx[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[5]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[4]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[3]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[2]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart/data_in_reg[1]/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:75]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below)
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|binary2ascii | (A:0xe800)*B   | 5      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|binary2ascii | (PCIN>>17)+A*B | 21     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|binary2ascii | (A:0x1e400)*B  | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|binary2ascii | (PCIN>>17)+A*B | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|binary2ascii | (A:0xca00)*B   | 5      | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|binary2ascii | (PCIN>>17)+A*B | 14     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|binary2ascii | (A:0xf5e100)*B | 25     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ascii2binary | A*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ascii2binary | A*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ascii2binary | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ascii2binary | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin uart/ena with 1st driver pin 'uart/ena_reg__0/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:48]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin uart/ena with 2nd driver pin 'uart/ena_reg/Q' [C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.srcs/sources_1/imports/sources_1/uart.v:71]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     5|
+|4     |LUT2   |     6|
+|5     |LUT3   |     9|
+|6     |LUT4   |     6|
+|7     |LUT5   |    12|
+|8     |LUT6   |    16|
+|9     |FDRE   |    67|
+|10    |IBUF   |     2|
+|11    |OBUF   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 41 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1265.266 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1265.266 ; gain = 17.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1265.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1265.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8eac18de
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 4 Warnings, 41 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1265.266 ; gain = 17.977
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/upsag/Desktop/Chula/ 3-1/HW_Syn_Lab/Final_Project/Final_Project.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 16 11:37:10 2021...
